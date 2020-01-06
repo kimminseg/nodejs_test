@@ -16,6 +16,7 @@ var server = http.createServer(function(request, response) {
 
   // 객체화된 url중에 querystring부분만 따로 객체화
   var parsedQuery = querystring.parse(parseUrl.query, '&', '=');
+  // 파라미터 로그찍기
   console.log(parsedQuery);
 
   console.log('--- log end ---');
