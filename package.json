@@ -1,0 +1,22 @@
+{
+  "name": "nodejs_test",
+  "version": "1.0.0",
+  "description": "Hello nodejs_test\r Hello Test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimminseg/nodejs_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimminseg/nodejs_test/issues"
+  },
+  "homepage": "https://github.com/kimminseg/nodejs_test#readme",
+  "dependencies": {
+    "steem": "^0.7.10"
+  }
+}
