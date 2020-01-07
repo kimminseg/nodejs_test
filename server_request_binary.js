@@ -12,7 +12,7 @@ var server = http.createServer(function(request, response) {
 
   if ( resource.indexOf('/images/') == 0 ) {
     var imagePath = resource.substring(1);
-    console.log('imagePath :' + imagePath);
+    console.log('imagePath : ' + imagePath);
 
     var imageMime = mime.getType(imagePath);
     console.log('imageMime : ' + imageMime);
@@ -22,7 +22,8 @@ var server = http.createServer(function(request, response) {
         response.writeHead(500, {'Content-Type':'text/html'});
         response.end('500 Internal Server ' + error);
       } else {
-        response.writeHead(200, {'Content-Type':'text/html'});
+        // imageMime을 타입으로 해놔야한다.
+        response.writeHead(200, {'Content-Type':imageMime});
         response.end(data);
       }
     });
