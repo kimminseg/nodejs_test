@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kimminseg/nodejs_test#readme",
   "dependencies": {
+    "mime": "^2.4.4",
     "steem": "^0.7.10"
   }
 }
